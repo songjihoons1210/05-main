@@ -1,0 +1,79 @@
+    HTML : 마크업 언어란 ex 사람 뼈대
+    CSS : 스타일 언어 ex 사람 옷
+    js : 객체지향 언어 ex 사람 동작/이벤트
+    [CSS] :
+        - Csacading style sheets
+        1. 위에서 아래로 꾸미기 시트를 덮는다. (대상은 마크업) , stlye()
+        2. 주로 html언어를 꾸미는 목적으로 사용
+        3. css는 html종속형 스타일 언어 , html안에서만 실행 가능
+
+    [ CSS 적용 방법]
+        방법1 : 
+            <마크업명 stlye="속성명:값; 속성명:값; "/>
+        방법2
+            <head>
+                <stlye>
+                    식별자{ 속성명:값; 속성명:값; }
+                </stlye>
+        *방법3* : 협업간의 유지보수 유용
+            * CSS확장자 파일내에서
+                식별지{ 속성명:값; 속성명:값; }
+            * HTML에서 CSS확장자 파일 불러오기
+                <head>
+                    <link href="css파일경로" rel="stylesheet" />
+                </head>
+    *브라우저 임시 테스트 : 브라우저 f12 개발자도구 
+
+{ CSS 주석}
+    - CSS  : /* 주석처리 */ 
+    - HTML : <!-- 주석처리 -->
+
+        [ css 구조 ] 
+        선택자{ 속성명 : 값 ; }
+
+    [ css 선택자 ]
+    1. *        : 전체선택자 (공통 css 적용)
+    2. 마크업명 : 마크업선택자
+    3. 클래스   : 클래스 선택자 (복수)
+    4. #아이디  : 아이디 선택자 (단일)
+    * 만일 속성명이 중복일때 우선 순위
+        style속성 > #id > class > 마크업 > *
+    * 그외 중복일때는 코드작성순으로 마지막 코드의 속성이 적용
+    * 관례적(일반적)으로 최대한 클래스 선택지 활용하고 복잡한 부분 ID선택자를 적용한다.
+    * 여러개 선택자를 한번에 적용 : ,쉼표를 이용한 다중 선택자 
+        - 선택자A , 선택자B{ 속성명 : 값; }
+    - 자식 선택자 : > 이용한 자식 선택할수있음
+        - 무모선택자 > 자식선택자{ }
+    - 자손 선택자 : 띄어쓰기 이용한 자손 선택자
+        - 부모선택자 자손선택자{ }
+
+[CSS 실별/선택자 ]  : CSS 속성을 적용할 대상 구분
+
+[ css 텍스트 속성 ] 
+    1. font-famliy
+    2. font - size
+    3. font-style: ltallc;
+    4. font-weight
+    5. color
+    6. word-spacing
+    7. letter spacing
+    8. line-height
+    9. text-align
+    10. text-decoration
+    11. text-shadow
+    12. ㅠborder
+    13. border-radius
+    14. box-shadow
+    15. width
+    16. helght 
+    17. padding
+    18. margin
+        margin: 0 auto ;
+    19. background-color
+    20. display : 
+        1. Inline
+        2. block
+        3. Inline-block
+        4. none
+        5. flex}
+        

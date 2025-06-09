@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <table border="1" style="border-collapse : collapse;"> <!--표 (테이블) 마크업, border="1" -->
+        <tr><!--table row : 가로/행 추가-->
+            <th> <!-- table head : 제목/열 추가-->
+                첫줄1
+                <hr>
+            </th>
+            <th>
+                첫줄2
+            </th>
+        </tr>
+        <tr>
+            <td> <!-- table data : 내용/셀 추가-->
+                데이터1
+
+            </td>
+            <td>
+                데이타2
+            </td>
+        </tr>
+        <tr>
+            <td colspan="">데이터3(열방합)</td> <!-- colspan : 열 병합-->
+        </tr>
+        <tr>
+            <td rowspan="2"> 데이터4(행병합) </td> <!-- rowspan="병합수" : 행 병합-->
+            <td> 데이터5 </td>
+        </tr>
+
+        <tr>
+            <td> 데이터6 </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,214 @@
+li {
+    list-style-type: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+/* 테두리까지 */
+
+
+a {
+    text-decoration: none;
+    /*밑줄제거*/
+    color: black;
+}
+
+#img2>img {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    /*배치 방법*/
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px auto;
+    width: 1280px;
+}
+
+
+.top_menu {
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.main_top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_top>li {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px 30px 100px;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 30px auto;
+}
+
+.side_menu {
+    width: 250px;
+}
+
+.content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+
+.content>.leftbox {
+    width: 490px;
+}
+
+.content>.rightbox {
+    width: 400px;
+}
+
+.rightbox {
+    width: 480px;
+}
+
+.text1 {
+    font-size: 25px;
+    background-color: gray;
+    color: white;
+}
+
+.text3 {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: solid 2px gray;
+    padding-bottom: 7px;
+    padding-top: 7px;
+
+}
+
+button {
+    width: 45px;
+    height: 35px;
+    margin-left: 3px;
+}
+
+.side_menu {
+    padding-left: 5px;
+}
+
+h4 {
+    border-top: 1px solid black;
+    border-bottom: 2px rgba(231, 227, 238, 0.959) solid;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.bac1 {
+    /*왼쪽 정렬*/
+    padding-left: 5px;
+}
+
+.bac2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.time {
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    padding-bottom: 8px;
+}
+
+.쿠키 {
+    margin-top: 15px;
+}
+
+.쿠킹 {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.leftbox>li {
+    border: solid 1px red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.게시판 {
+    margin-top: 40px;
+    border-bottom: solid 1px black;
+    padding-bottom: 10px;
+}
+
+.제빵 {
+    border-bottom: solid 1px black;
+    padding-bottom: 8px;
+}
+
+.rightbox>.제빵_사진 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img1 {
+    margin-right: 35px;
+}
+
+.제빵_사진 {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    
+}
+
+.제빵_사진1 {
+    margin-right: 10px;
+}
+
+#footer {
+    background-color: rgb(89, 89, 121);
+    color: white;
+    border-bottom: 50px;
+    height: 250px;
+}
+
+.소개 {
+    display: flex;
+    margin-bottom: 100px;
+    margin: 0px auto;
+    width: 1280px;
+    padding: 10px;
+}
+
+.소개>li {
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.문의 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    width: 1280px;
+}
+
+.폰트{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/*스트 선긋기 : underline(밑줄) , overline(윗줄) , line-through(최소선*/

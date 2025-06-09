@@ -1,0 +1,648 @@
+* {
+
+    margin: 0px;
+    text-decoration: none;
+
+}
+
+/*여백 맞춤 / 밑줄 지우기 */
+
+#wrap {
+    width: 100%;
+
+}
+
+a {
+    color: gray;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* 상 단 */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 17px;
+    margin: 0px 150px;
+
+}
+
+.상단메뉴 {
+    display: flex;
+    padding: 19px 25px;
+}
+
+.상단메뉴>li {
+    margin-left: 30px;
+}
+
+
+.중앙 {
+    display: flex;
+    padding: 15px;
+    font-weight: 500;
+
+}
+
+.중앙2 {
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+.선 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.선::before,
+.선::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(250, 215, 215);
+}
+
+.사진>img {
+    width: 150px;
+    height: 66px;
+}
+
+#메인 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 230px;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.main>li {
+    margin: 0px 55px;
+}
+
+.장바 {
+    display: flex;
+}
+
+.장바>img {
+    width: 30px;
+    height: 30px;
+    padding: 0px 15px;
+}
+
+
+/* 메인 이미지 */
+.센터이미지>img {
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+    display: flex;
+    postiion: relative;
+
+}
+
+.슬라이드버튼 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
+
+.슬라이드버튼>.슬라이드1>.버튼 {
+    border: solid 2px black;
+}
+
+.버튼 {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    position: absolute;
+    top: 350px;
+    background-color: rgba(206, 187, 187, 0.5);
+
+}
+
+.버튼>img {
+    width: 25px;
+    height: 25px;
+    margin: auto auto;
+}
+
+.슬라이드버튼>.슬라이드2>.버튼 {
+    border: solid 2px yellow;
+}
+
+.슬라이드2 {
+    margin-right: 75px;
+}
+
+
+/* 메인이미지 아래 박스 */
+
+.삼박스 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+
+}
+
+.삼박스>div {
+    margin: 0px 13px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 340px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+}
+
+.박스색1 {
+    background-color: #43270b;
+    border: solid 1px gray;
+    color: white;
+    border-radius: 15px;
+    padding: 13px 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.박스색1>img {
+    width: 120px;
+    height: 72px;
+}
+
+
+.박스색2 {
+    background-color: #F4B310;
+    border: solid 1px gray;
+    border-radius: 15px;
+    padding: 13px 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.박스색2>img {
+    width: 79.95px;
+    height: 63px;
+}
+
+.박스색3 {
+    background-color: #E7E7E7;
+    border: solid 1px gray;
+    border-radius: 15px;
+    padding: 13px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.박스색3>img {
+    width: 80px;
+    height: 96px;
+}
+
+/* 배달 주문 퀵 */
+.주문 {
+    padding: 22.5px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    align-items: center;
+    text-align: center;
+    font-weight: 100;
+    font-size: 27px;
+    padding: 0px 290px;
+    height: 200px;
+
+}
+
+
+.주문>.배달1>img {
+    width: 50px;
+    height: 50px;
+}
+
+.주문>.배달2>img {
+    width: 50px;
+    height: 50px;
+}
+
+.주문>.배달3>img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.배달1 {
+    margin-top: -8px;
+}
+
+.배달2 {
+    margin-top: -30px;
+}
+
+.배달글 {
+    color: #bf8c0a;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.배포퀵 {
+    font-weight: 500;
+}
+
+/* 우측 창업문의 */
+
+.창업문의>img {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 45px;
+    bottom: 245px;
+    z-index: 2;
+
+}
+
+.창업박스 {
+    background-color: black;
+    width: 97px;
+    height: 57px;
+    border-radius: 15px;
+    margin-left: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    position: fixed;
+    right: 50px;
+    bottom: 210px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.창업박스>button {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 335px;
+    right: 130px;
+    background-color: black;
+    color: white;
+}
+
+.button>button>img {
+    width: 5px;
+    height: 5px;
+    margin-bottom: 3px;
+    margin-right: 1px;
+}
+
+.button>button {
+    color: white;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    position: fixed;
+    right: 125px;
+    bottom: 330px;
+    border-radius: 15px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* best 메뉴*/
+h5 {
+    text-align: center;
+    padding: 45px 0px;
+    font-size: 33px;
+    font-weight: 570;
+}
+
+
+.치킨버튼>div>img {
+    width: 220px;
+    height: 220px;
+    margin-left: 30px;
+}
+
+.치킨버튼 {
+    display: flex;
+    justify-content: center;
+}
+
+.best치킨색상 {
+    font-size: 19.5px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: black;
+}
+
+
+.best치킨글1 {
+    text-align: center;
+    font-size: 16.87px;
+    color: #454545;
+    font-weight: 400;
+}
+
+.best치킨글2 {
+    text-align: center;
+    font-size: 16.87px;
+    color: #454545;
+    padding-bottom: 25px;
+    font-weight: 400;
+}
+
+.best치킨글3 {
+    text-align: center;
+    font-size: 16.87px;
+    color: #454545;
+    padding-bottom: 25px;
+    font-weight: 400;
+}
+
+.best치킨글4 {
+    text-align: center;
+    font-size: 16.87px;
+    color: #454545;
+    padding-bottom: 25px;
+    font-weight: 400;
+}
+
+.best치킨글5 {
+    text-align: center;
+    font-size: 16.87px;
+    color: #454545;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+
+.best가격 {
+    font-size: 21.6px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.원 {
+    margin-left: 5px;
+    color: #7b7b7b;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+.슬라이드3 {
+    display: flex;
+    align-items: center;
+}
+
+.버튼1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    margin-top: -100px;
+    border: 1px solid #b99e5580;
+}
+
+.버튼1>img {
+    width: 25px;
+    height: 25px;
+    margin: auto auto;
+    background-color: white;
+}
+
+
+/* 맛난느 혜택 */
+.하단 {
+    width: 100%;
+    height: 500px;
+    background-color: #fed100;
+    margin-top: 50px;
+}
+
+.하단2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0px 240px;
+    margin: 0px a;
+}
+
+
+
+
+.하단2>div>p {
+    font-size: 21.6px;
+}
+
+.맛있는 {
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+    margin-right: 5px;
+}
+
+.맛있는박스 {
+    border: solid 1px white;
+    width: 115px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    padding-right: 23px;
+    margin-left: -5px;
+    position: absolute;
+    margin-top: 13px;
+}
+
+.맛있는택 {
+    margin-left: 450px;
+}
+
+
+
+.스타일>div>.로그회원1>.로그인선 {
+    margin: 0px 5px 0px 5px;
+    font-style: italic;
+    color: #b0961b;
+}
+
+
+.맛있는택>.스타일>div {
+    width: 196px;
+    height: 47px;
+    border-radius: 35px;
+    border: 2px solid white;
+    background-color: transparent;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+
+}
+
+.로그회원1 {
+    margin-left: 33px;
+}
+
+.스타일>div>a {
+    color: black;
+}
+
+
+.선택 {
+    position: relative;
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.하단2>.선택 {
+    background-color: white;
+    border-radius: 10px;
+    width: 750px;
+    height: 180px;
+}
+
+
+.선물>img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.선물 {
+    display: flex;
+    align-items: center;
+    font-size: 16.5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.어디로 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.선택>ul>.가맹점 {
+    padding-bottom: 25px;
+}
+
+.가맹점폰트 {
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 8px;
+
+
+}
+
+.가맹점이미지아님 {
+    text-align: right;
+    padding-right: -15px;
+    margin-right: -18px;
+    font-size: 12px;
+}
+
+.가맹점박스 {
+
+    width: 271px;
+    height: 24.67px;
+    background-color: #fed100;
+    border-radius: 5px;
+    border: 0px;
+    padding-right: 23px;
+    margin-left: -5px;
+    position: absolute;
+    margin-top: 20px;
+
+}
+
+
+.곰팡이 {
+    width: 145px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("곰팡이.png");
+    background-repeat: no-repeat;
+    padding-right: 30px;
+
+}
+
+.곰팡이>div>.숫자이 {
+    font-size: 40px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.곰팡이>div>.퍼센트 {
+    font-size: 16.5px;
+    color: white;
+    font-weight: 500;
+}
+
+.곰팡이>.cj적립 {
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+
+.Nene {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -170px;
+}
+
+.Nene_img {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 300px;
+    margin-top: -35px;
+}
+
+
+.Nene_img>img {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 50px;
+    padding: 20px;
+    
+}

@@ -1,0 +1,47 @@
+
+h2{
+    text-align: left;
+   font-style: italic; 
+   font-family: "궁서";
+   font-size: 50px;
+   line-height: 20%;
+}
+
+.가장{
+    color: blue;
+    font-family: "궁서체";
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.넬슨{
+    color: red;
+    text-align: center;
+    text-decoration: underline overline line-through;
+    text-shadow: 1px 1px 3px rgb(216, 183, 183);
+    line-height: 70%;
+}
+.마음{
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline overline line-through;
+    text-shadow: 1px 1px 3px #bfbfbf;
+    line-height: 100%;
+}
+.페이지{
+    color: blue;
+    font-family: "궁서체";
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.오늘{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline overline line-through;
+    text-shadow: 1px 1px 3px #bfbfbf;
+}

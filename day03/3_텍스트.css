@@ -1,0 +1,47 @@
+/* 누구를{ 무엇을 : 어떻게 : )*/
+
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.title {
+    font-family: "궁서체";
+    /*글골/폰트 : 현재 pc설치한 글꼴 가능*/
+    font-size: 30px;
+    /* 글자크기 px(픽셀) */
+    font-style: italic;
+    /* 글골 기울기 */
+    font-weight: bold;
+    /* 글골 진하게 : b마크업은 기본값 */
+
+}
+
+.content {
+    font-family: 'ChosunGu';
+    /* 글꼴 */
+    color: goldenrod;
+    /*글꼴 색상*/
+    word-spacing: 5px;
+    /* 단어 간격 : 여간 */
+    letter-spacing: 10px;
+    /* 글자 간격 : 자간 */
+    line-height: 150%;
+    /* 줄 간격 ,단위%  */
+
+}
+
+.writer {
+    text-align: center; /* 텍스트 가로 정렬 : left.right.center*/
+    /* 텍스트 선긋기 : underline(밑줄) , overline(윗줄) , line-through(최소선*/
+    text-decoration: underline overline ; 
+    /* 텍스트 그림자 : x축 y축 흐림정도 색상*/
+    text-shadow: 5px 5px 4px red;
+    /* 색상 : 3가지 ( 1. 색상명 2.RGB 3. 핵스코드)*/
+    color: green; /* 1. 색상명 */
+    color: rgb(129, 49, 49); /* 2.RGB */
+    color: #574545; /* 핵스코드 */
+}

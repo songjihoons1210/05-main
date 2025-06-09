@@ -1,0 +1,56 @@
+/*1. bakcground*/
+
+.box{
+    border: solid 2px red;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.box p{
+    background-color: white;
+    padding: 5px; border:  1px solid;
+}
+
+.color1{
+    background-color: rgba(0, 0, 255, 0.5);
+    /* rgba( 레드 그린 블루 , 투명도 ) : 1(100%) ~ 0(0%)*/
+}
+
+.img1{ /* 함수명(); */
+    background-image: url("../사진.jpg");
+    background-position: center; /*이미지 위치*/
+    background-repeat: no-repeat; /* 사진 채우기 없음 */
+    
+}
+
+.img2{
+    background-image: url("img.jpg");
+    background-repeat: repeat;  
+    /* (기본값) 만일 비어있는 공간이 있으면 채움*/ 
+}
+
+.img3{
+    background-image: url("bird.png");
+    background-repeat: no-repeat; /* 사진 채우기 없음 */
+    background-position: center; /* 이미지 위치 이동 */
+    background-size: cover; /* 비율 유지 ,요소 안에 표시*/
+    background-color: black; /*만일 비어있는 공간이 있을때 사용*/
+}
+
+.img4{
+    background-image: url("../사진.jpg");
+    background-repeat: no-repeat; /*채우기 x*/
+    background-size: cover; /*비율 유지, 짤림 가능*/
+    background-position: center; /*이미지 이동 */
+    background-attachment: fixed; /*스크롤 이동해도 배경이미지 고정*/
+    /* fixed : 배열 박스 효과 : 요소의 텍스트는 고정되고 배경은 스크롤에 따라 이동되는 효과*/
+}
+.box2{
+    background-image: url("../실습/인스타그램/img.png"); /* 주의할점 : 배경 이미지 사진*/
+    width: 100px; height: 100px; /*사이즈 조정*/
+    background-repeat: no-repeat; /* 채우기 x*/
+    background-position: -50px -100px; /* 위치 : left : +왼쪽 -오른쪽 , top : +위 -아래 */
+    border: 1px solid red;
+    background-size: cover;
+
+}

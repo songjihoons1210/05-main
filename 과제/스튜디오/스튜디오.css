@@ -1,0 +1,30 @@
+
+li{
+    list-style-type: none;
+    color: black;
+}
+
+* {
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+    width: 1280px;
+}
+
+a {
+    text-decoration: none;
+    /*밑줄제거*/
+    color: black;
+}
+
+.studio{
+    font-size: 30px;
+}
+span{
+    color: blue;
+}
+
+.main_img > img{
+    display: block;
+    margin: 0 auto;
+}

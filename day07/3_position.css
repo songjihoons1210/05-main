@@ -1,0 +1,28 @@
+
+
+h1{
+    position: static;
+}
+
+.바탕색{
+    background-color: red;
+    width: 1700px; height: 780px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box{
+    background-color: yellow;
+    border-radius: 5px;
+    width: 200px; height: 150px;
+    display: flex;
+    justify-content: center ; align-items: center;
+    position: absolute;
+}
+
+.box1{ left: 750px; top: 50px;}
+.box2{ left: 400px; top: 220px;}
+.box3{ left: 400px; top: 420px;}
+.box4{ left: 750px; top: 600px;}
+.box5{ right: 400px; top: 220px;}
+.box6{ right: 400px; top: 420px;}

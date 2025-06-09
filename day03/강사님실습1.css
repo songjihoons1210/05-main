@@ -1,0 +1,25 @@
+
+.제목구역{
+    font-family :  "궁서";
+    font-size: 50px;
+    font-style: italic;
+}
+
+.내용구역{
+    font-family:  "굴림";
+    color:  blue;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.작성자구역{
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+    text-shadow: 1px 1px 5px gray;
+}
+
+
+

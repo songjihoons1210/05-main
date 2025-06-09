@@ -1,0 +1,41 @@
+
+.박스{
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(202, 156, 156);
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    margin: 70px auto;
+    padding: 5px 0px 2px 0px;
+
+    
+}
+
+
+.로그{
+    font-size: 30px;
+    text-align: center;
+}
+
+.id, .password{
+    padding: 0px 15px;
+    width: 200px; height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 7px
+    
+}
+
+.button{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    padding: 5px 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.계정{
+    font-weight: 400;
+}
+

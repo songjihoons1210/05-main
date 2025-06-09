@@ -1,0 +1,69 @@
+
+*{ padding: 0; margin: 0px; border: solid 1px red;
+}
+
+
+li{list-style-type: none;
+font-size: 12px;}
+.wrap{ width: 1280px;}
+
+.사진img > img{width: 552px; height: 450;}
+
+.header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    height: 680px;
+    margin-bottom: 130px;
+}
+.instar{ margin: 40px 0px 40px 0px;}
+.사진img , .인스타{ margin: 0px 13px;}
+
+.사진img{margin: 105px 25px 0px 0px;}
+
+.header > .인스타{margin-top: auto;
+width: 300px; height: 500px; }
+
+
+.img1{background-image: url("../인스타그램/img.png");
+    width: 175px; height: 51px;
+    margin-left: 45px;
+    background-position: 178px 444px;
+    }
+
+.text{width: 260px; height: 36px; margin-top: 10px; border: 1px solid gray; border-radius: 5px; }
+
+.로고{ width: 20px; height: 20px; margin-right: 5px;}
+
+a{text-decoration: none;}
+
+.로고인{display: flex; 
+    justify-content: center;
+    margin-top: 20px;}
+
+p{font-size: 14px;}
+
+.button{background-color: #0095F6; color: white; font-size: 14px; width: 270px; height: 32px;
+border-radius: 6px; border: 0px; margin: 10px 0px;}
+
+.계정{margin-top: 70px; font-size: 15px;}
+
+.비번{margin-top: 30px; color: rgb(0, 0, 0); font-size: 14px;}
+
+.또는{display: flex; justify-content: center; align-items: center;}
+
+.또는::before , .또는::after{content: ""; width: 100px; height:1px; background-color: gray; margin: 0px 10px;  }
+
+.footer > .footer2 > li{margin: 0 10px; color: gray;}
+
+.footer{  width: 100%; height: 50px; margin: 0 auto;}
+
+.footer2{ display: flex; justify-content: center; }
+
+.footer3{ display: flex; justify-content: center; color: gray;}
+
+.footer3 > li{margin: 12px 15px;}
+
+select{border: 0px; background-color: white; color: gray;}
