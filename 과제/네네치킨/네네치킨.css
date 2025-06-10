@@ -785,14 +785,20 @@ h5 {
 }
 
 .이용약관 {
-    width: 280px;
+    width: 340px;
     font-size: 14.2px;
     
 }
 
 .이용약관>span {
     display: block;
-    margin: 0px 0px 0px 0px;
     
 }
 
+.이용약관 > .약관들1{ justify-content: space-between;
+display: flex; margin: 0px 30px;}
+
+.이용약관 > .약관들2 ,.약관들3{ justify-content: space-between;
+display: flex; margin: 0px 30px; padding: 0px 0px 0px 0px;}
+
+.약관들3{}
