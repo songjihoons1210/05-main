@@ -148,3 +148,7 @@
 if(아이디 목록.indexOf(새로운 아이디 ) != -1){
     현재 사용중인 아이디입니다.
 }
+    마지막 인덱스 : 변수명.length -1
+    for( let idex = 0; index <= 변수명.length - 1 ; index)++ {
+        변수명[index];
+}    break, cotinue 중간 종료 가능
