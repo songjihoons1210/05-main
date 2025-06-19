@@ -104,7 +104,7 @@ gainScore();
 gainScore();
 gainScore();
 loseScore();
-console.log(`최종 점수  gainScore(10)x3 , loseScre(-5)x1 :${userScore}`);
+console.log(`최종 점수  gainScore(10)x3 , loseScre(-5)x1 <오류아닙니다 : ${userScore}`);
 
 
 /*
@@ -129,22 +129,42 @@ function findTopStudent(asd){
     return student;
 }
 let asdd = findTopStudent(students);
-console.log(asdd.score);
+console.log(`최고 점수는 : ${asdd.score}`);
 
 
 /*
 실습 6: 상품 목록 페이지 만들기 (참고: 예제 6, 7, 8, 12)
-전역변수 products 배열 데이터를 이용하여, 각 상품을 소개하는 HTML 요소를 동적으로 만들어 
-페이지에 표시하는 renderProducts 함수를 만드세요.
+전역변수 products 배열 데이터를 이용하여, 각 상품을 소개하는 HTML 요소를 
+동적으로 만들어 페이지에 표시하는 renderProducts 함수를 만드세요.
 각 상품은 이름(<h4>), 가격(<p>), 재고(<p>)를 포함한 div로 묶여야 합니다.
+*/
+
 const products = [
   { name: '노트북', price: 1200000, stock: 5 },
   { name: '모니터', price: 350000, stock: 12 },
   { name: '키보드', price: 80000, stock: 25 }
 ];
-*/
+let 수량내 = '';
+let 이름 = '';
+let 가격 = '';
+let stock2 = '';
+let html = '';
+function renderProducts(fff) {
+    for(let i = 0 ; i <=fff.length -1 ; i++){
+        let 재고 = stock2 [i];
+    if(products.name == 재고.stock) {
+            수량내 = true;
+        
+    }
+    
+    }
+}
+html += `<h1>상품목록 페이지</h1>        
+            <h3>${products.stock} </h3>
+        
+        `
 
-
+document.write(html);
 
 /*
 실습 7: 간단한 계산기
