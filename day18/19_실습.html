@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <div id="wrap"> <!-- 전체 구역 -->
+        <div>
+            <h3>부서 관리</h3>
+            <span>부서,사원,휴가 통합 관리 시스템</span>
+        </div></br>
+        <div id="header"> <!-- 등록 영역 -->
+            <input id="leftname" type="text" placeholder="신규 부서명입력" />
+            <button onclick="newpost()" class="btnAdd"> 추가 </button>
+        </div>
+        <div id="left"> <!-- 출력 영역 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th> 부서 </th>
+                        <th> 관리 </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 개발팀 </td>
+                        <td> <button class="bEdit"> 수정 </button>
+                            <button class="bDelete"> 삭제 </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="center">
+            <div>
+                <h3>사원 등록</h3>
+                <span>이름</span>
+                <input id="pnameIn" type="text" />
+                <span>직급</span>
+                <input id="pnameIn" type="text" />
+
+                <select id="optioncategory">
+                    <option value="" disabled selected> 부서를 선택하세요 </option>
+                    <option value="1"> 개발팀 </option>
+                    <option value="2"> 디자인팀 </option>
+                    <option value="3"> 기획팀 </option>
+                    <input id="pimgInput" type="file" accept="image/* " />
+                    <button onclick="worker()" class="btnAdd"> 등록 </button>
+                </select>
+            </div>
+            <div>
+                <h3>사원 전체 목록</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> 사진 </th>
+                            <th> 이름 </th>
+                            <th> 부서 </th>
+                            <th> 직급 </th>
+                            <th> 관리 </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <img src="https://placehold.co/100x100" /> </td>
+                            <td> 김민준 </td>
+                            <td> 개발팀 </td>
+                            <td> 사원 </td>
+                            <td> <button class="bEdit"> 수정 </button>
+                                <button class="bDelete"> 삭제 </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h3>사원 휴가 신청</h3>
+            <span>asd
+            <select>
+            <option value="" disabled selected> 휴가 신청 사원을 선택하세요 </option>
+            </select></span></br>
+            <span>휴가 시작일 <input id="#dateInput" type="date" /> </span>
+            <span>휴가 종료일 <input id="#dateInput" type="date" /> </span>
+        </br>
+            <input id="pnameIn" type="text" placeholder=" ex : 여름 휴가" />
+            <button onclick="vacation()" class="btnAdd"> 신청 </button>
+
+        </div>
+
+        <div>
+            <h3>휴가 신청 전체 목록</h3>
+            <ul>
+                <li><h4>김민준</h4><span><button class="취소">취소</button></span></li>
+                <li>2025-08-04 ~ 2025-08-04</li>
+                <li>사유 : 병원 진료</li>
+            </ul>
+            <ul>
+                <li><h4>이서연</h4><span><button class="취소">취소</button></span></li>
+                <li>2025-07-21 ~ 2025-07-25</li>
+                <li>사유 : 여름 휴가</li>
+            </ul>
+        </div>
+    </div>
+    <script src='19_실습.js'></script>
+</body>
+
+</html>

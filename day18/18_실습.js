@@ -131,13 +131,14 @@ function productPrint() {
     console.log(`>> productPrint exe `);
     // (1) 어디에,
     const tbody = document.querySelector(`#main > table > tbody `);
-    // (2) 무엇을,
+    // (2) 무엇을, 
     let html = ``;
     for (let index = 0; index <= productlist.length - 1; index++) {
         const product = productlist[index];
+        // 가능 const category = getCategory(product.cno;// cno를 매개변수로 넣어서 카테고리 객체 반환
         html += `<tr>    
-                        <td> <img src="${product.ping}" /> </td> <td> ${product.cno} </td> <td> ${product.pname} </td> 
-                        <td> ${product.pprice.toLocaleString() } </td> <td> ${product.pdate} </td>       
+                        <td> <img src="${product.ping}" /> </td> <th> ${getCategory(product.cno).cname} </th> <td> ${product.pname} </td> 
+                        <td> ${product.pprice.toLocaleString()} </td> <td> ${product.pdate} </td>       
                         <td> 
                         <button onclick="productDelete(${product.pno})" class="btnDelete"> 삭제 </button>
                         <button onclick="productEdit(${product.pno})" class="btnEdit"> 수정 </button> </td> 
@@ -149,15 +150,16 @@ function productPrint() {
 
     }
     // (3) 출력
-    tbody.innerHTML = html;                                                             console.log(html);
+    tbody.innerHTML = html; console.log(html);
 }
 // 4. 제품 삭제함수 : 배열내 삭제할 객체를 찾아서 .splice 한다 .. < 매개변수 : 제품코드 >
 // 실행조건 : [삭제버튼] onclick 했을때
-function productDelete(pno){ console.log(` >> delete exe `) ; console.log(pno) ;
-// (1). 삭제할 번흐의 객체를 찾는다. for
-    for( let index = 0 ; index <= productlist.length -1 ; index++){
-        if( productlist[index].pno == pno){ //만약에 index번째 제품코드와 삭제할 제품코드가 같으면
-            productlist.splice(index , 1 ) // 해당 index 해서 요소 1개 삭제
+function productDelete(pno) {
+    console.log(` >> delete exe `); console.log(pno);
+    // (1). 삭제할 번흐의 객체를 찾는다. for
+    for (let index = 0; index <= productlist.length - 1; index++) {
+        if (productlist[index].pno == pno) { //만약에 index번째 제품코드와 삭제할 제품코드가 같으면
+            productlist.splice(index, 1) // 해당 index 해서 요소 1개 삭제
             alert('[성공] 제품 삭제 '); //안내
             productPrint(); // (2) 삭제 이후 제품목록 새로고침/렌더링
             return; // 목표 이뤘으니 함수 종료한다.
@@ -167,16 +169,33 @@ function productDelete(pno){ console.log(` >> delete exe `) ; console.log(pno) ;
     alert('[오류] 제품번호 불일치');
 } // func end // 삭제함수 끝
 // 5. 제품 수정함수 :
-function productEdit(pno) {console.log(` >> Edit exe ` ) ;  console.log(pno); 
-    for( let index = 0 ; index <= productlist.length -1 ; index++){
-        if(productlist[index].pno == pno ){ //만약에 index번쨰 제품코드가 수정할 제품코드와 같다면
+function productEdit(pno) {
+    console.log(` >> Edit exe `); console.log(pno);
+    for (let index = 0; index <= productlist.length - 1; index++) {
+        if (productlist[index].pno == pno) { //만약에 index번쨰 제품코드가 수정할 제품코드와 같다면
             const pname = prompt('수정할 제품명 : '); // 수정할 값 입력받기/
-            const pprice = prompt('수정할 제품명 : ');    
+            const pprice = prompt('수정할 제품명 가격 : ');
             productlist[index].pname = pname;  // 입력받은 값으로 수정
             productlist[index].pprice = Number(pprice);
-            alert('[성공] 제품 수정');
             productPrint(); // 제품목록 새로고침
-            return; //목표를 이뤘으니 함수 강제 종료
+            return; //목표를 이뤘으니 함수 강제 종료 * return 사용시 func end로 감
+            // break; // * break; 사용시 for end로 감
         }
     }
-}
+    // (2)
+    alert('[성공] 제품 수정');
+} // func end 함수 끝
+
+// 7. 카테고리번호(cno) 에 해당 하는 카테고리객체 1개 반환 함수
+function getCategory(cno) {
+    console.log(` >> getCategory exe`); console.log(cno);
+    // 1. 매개변수(cno) 와 동일한 카테고리객체 찾기
+    for (let index = 0; index <= categorylist.length - 1; index++) {
+        if (categorylist[index].cno == cno) { // 만일 index번째 cno
+            return categorylist[index]; // 찾은 객체를 반환한다.
+        } // if end
+    } // for end
+    // 2. 못찾았다.
+    return null;    // 못찾을 경우 null 
+} // func end
+getCategory();
