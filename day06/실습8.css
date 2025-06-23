@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 500px;
+}
+
+.the {
+    color: blue;
+}
+
+#header>h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#header>ul {
+    display: flex;
+}
+
+#header>ul>li {
+    padding-right: 20px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#mainimg>img {
+    width: 70%;
+    height: 500px;
+    margin-left: 280px;
+}
+
+#mainfot {
+    display: flex;
+    justify-content: center;
+}
+
+.중앙 {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.중앙>p>span {
+    font-weight: bold;
+    display: flex;
+    font-size: 12px;
+}
+
+.중앙>p {
+    font-size: 10px;
+    margin-right: 7px;
+}
+
+.중앙>img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+#footer1 {
+    background-color: rgb(241, 229, 231);
+    padding: 15px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+#footer1>div>img {
+    width: 140px;
+    height: 100px;
+    margin: 10px 12px;
+    display: flex;
+}
+
+#footer1>div>span {
+    font-size: 13px;
+    display: flex;
+    margin-left: 10px;
+}
+
+#footer1>div>.촬영 {
+    font-weight: bold;
+}
+
+#footer {
+
+    background-color: rgb(121, 121, 117);
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.asd {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.asd2 {
+    font-size: 17px;
+}
+
+.asd3 {
+    color: white;
+    font-size: 12px;
+}
+
+.asd3_1 {
+    margin-bottom: 15px;
+}
+
+#footer > div { margin: 30px 40px 0px 50px;}
+
+.fff> img {width: 30px; height: 30px;}
