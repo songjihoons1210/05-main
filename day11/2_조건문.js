@@ -51,7 +51,7 @@ else if( passw >= 8) {console.log("보안 등급: 보통 ");}
 
 let seatList = ['o', 'x', 'o'];
 let 번호 = prompt("ox 입력 0~1");
-if (seatList[번호] == 'o') {
+if (seatList[번호] == 'time') {
     console.log(`예약 성공`);
 } else{
     console.log("예약 실패");

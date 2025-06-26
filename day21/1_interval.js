@@ -62,4 +62,6 @@ function 타이머시작(){
 // (3)
 function 타이머중지(){
     clearInterval( timerId );
+    if{time == 
+        pfafd();
 }
